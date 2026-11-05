@@ -362,7 +362,7 @@ impl TopologyApp {
                             let search = ui.add(
                                 egui::TextEdit::singleline(&mut self.search)
                                     .hint_text("Find a task or file")
-                                    .desired_width(210.0)
+                                    .desired_width(210.0),
                             );
                             let matches: Vec<usize> = (0..view.model.sites.len())
                                 .filter(|&site| view.model.matches(site, &self.search))
@@ -1032,9 +1032,11 @@ mod tests {
 
     #[test]
     fn a_named_file_is_used_and_options_are_skipped() {
-        let source = Source::from_args(["--verbose".into(), "D:\\Data\\graph.ron".into()]);
+        // Built with the platform's own separator: a backslash separates folders only on Windows.
+        let named = Path::new("Data").join("graph.ron");
+        let source = Source::from_args(["--verbose".into(), named.clone().into_os_string()]);
 
-        assert_eq!(source.path, PathBuf::from("D:\\Data\\graph.ron"));
+        assert_eq!(source.path, named);
         assert!(!source.is_default);
         assert_eq!(source.file_name(), "graph.ron");
     }

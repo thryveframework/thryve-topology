@@ -11,8 +11,8 @@
     # The oldest Rust that egui and eframe 0.34 build with.
     rust-version = "1.92"
     license = "AGPL-3.0-or-later"
-    homepage = "https://github.com/thryveframework/ThryveVisualization"
-    repository = "https://github.com/thryveframework/ThryveVisualization"
+    homepage = "https://github.com/thryveframework/thryve-topology"
+    repository = "https://github.com/thryveframework/thryve-topology"
     readme = "README.md"
 
 [workspace.dependencies]

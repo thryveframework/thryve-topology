@@ -1,12 +1,12 @@
-# Contributing to ThryveVisualization
+# Contributing to Thryve Topology
 
 Thanks for your interest in improving the Thryve topology viewer.
 
 ## Getting set up
 
 ```bash
-git clone https://github.com/thryveframework/ThryveVisualization.git
-cd ThryveVisualization
+git clone https://github.com/thryveframework/thryve-topology.git
+cd thryve-topology
 cargo build
 ```
 
@@ -24,7 +24,7 @@ All three run in CI and must pass.
 
 ## Reporting bugs / requesting features
 
-Open a [GitHub issue](https://github.com/thryveframework/ThryveVisualization/issues) with:
+Open a [GitHub issue](https://github.com/thryveframework/thryve-topology/issues) with:
 
 - What you expected vs. what happened.
 - Your OS and the app version (or commit hash if built from source).

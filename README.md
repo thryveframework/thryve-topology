@@ -1,16 +1,16 @@
-# ThryveVisualization
+# Thryve Topology
 
 A cross-platform desktop viewer for [Thryve](https://github.com/thryveframework/thryve) task-topology graphs, built with [`egui`](https://github.com/emilk/egui)/[`eframe`](https://docs.rs/eframe), in the look of Thryve's website.
 
-[![CI](https://github.com/thryveframework/ThryveVisualization/actions/workflows/ci.yml/badge.svg)](https://github.com/thryveframework/ThryveVisualization/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/thryveframework/ThryveVisualization)](https://github.com/thryveframework/ThryveVisualization/releases/latest)
+[![CI](https://github.com/thryveframework/thryve-topology/actions/workflows/ci.yml/badge.svg)](https://github.com/thryveframework/thryve-topology/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/thryveframework/thryve-topology)](https://github.com/thryveframework/thryve-topology/releases/latest)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 
 ## What this is
 
 When a Thryve program runs with `is_debugging` and `visual_graph` both on in its config's `[debugging]` section, Thryve records which line of the program sent which task, and how many times. When the program shuts down, it writes that graph to `topology/topology_export.ron` in its root folder: the program's own folder, unless the config's `init.root_dir` names another.
 
-**ThryveVisualization is the viewer for that file.** It ships as a binary named `Topology`. At shutdown, Thryve looks for `Topology.exe` next to the program's own `.exe` (never in the root folder) and starts it with the file's full path, so the graph opens by itself. You can also open any export by hand.
+**Thryve Topology is the viewer for that file.** It ships as a binary named `Topology`. At shutdown, Thryve looks for `Topology.exe` next to the program's own `.exe` (never in the root folder) and starts it with the file's full path, so the graph opens by itself. You can also open any export by hand.
 
 The viewer:
 
@@ -25,7 +25,7 @@ It's a companion to [Thryve](https://github.com/thryveframework/thryve): it does
 
 ### Download a prebuilt binary
 
-Grab the archive for your platform from the [latest release](https://github.com/thryveframework/ThryveVisualization/releases/latest):
+Grab the archive for your platform from the [latest release](https://github.com/thryveframework/thryve-topology/releases/latest):
 
 | Platform | Archive |
 |---|---|
@@ -43,8 +43,8 @@ Every release also gets an automatic **"Source code (zip)"** and **"(tar.gz)"** 
 Requires Rust 1.92 or later, the oldest that egui 0.34 builds with:
 
 ```bash
-git clone https://github.com/thryveframework/ThryveVisualization.git
-cd ThryveVisualization
+git clone https://github.com/thryveframework/thryve-topology.git
+cd thryve-topology
 cargo build --release --bin Topology
 # binary at target/release/Topology (or Topology.exe on Windows)
 ```

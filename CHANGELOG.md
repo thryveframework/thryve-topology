@@ -39,4 +39,4 @@ The first release of Topology, which shows the task graph that Thryve exports in
   attached to each GitHub release.
 - CI: formatting, lints and tests on Windows, Linux and macOS.
 
-[0.1.0]: https://github.com/thryveframework/ThryveVisualization/releases/tag/v0.1.0
+[0.1.0]: https://github.com/thryveframework/thryve-topology/releases/tag/v0.1.0
