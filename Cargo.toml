@@ -1,0 +1,26 @@
+[workspace]
+    members = [
+        "thryve_graph"
+        ]
+
+    resolver = "3"
+
+[workspace.package]
+    version = "0.1.0"
+    edition = "2024"
+    # The oldest Rust that egui and eframe 0.34 build with.
+    rust-version = "1.92"
+    license = "AGPL-3.0-or-later"
+    homepage = "https://github.com/thryveframework/ThryveVisualization"
+    repository = "https://github.com/thryveframework/ThryveVisualization"
+    readme = "README.md"
+
+[workspace.dependencies]
+    # The viewer reads Thryve's export with its own description of the file (thryve_graph's
+    # `format` module), so it depends on none of Thryve's crates.
+    ron = "0.12"
+    serde = { version = "1.0.228" , features = ["derive"] }
+    # default_fonts: without it egui has no embedded font, so no text renders at all.
+    # x11 + wayland: without at least one, the app cannot open a window on Linux.
+    eframe = {version = "0.34" , default-features = false , features = ["glow", "default_fonts", "x11", "wayland"]}      # egui framework with window management
+    egui = "0.34"        # Immediate-mode GUI library

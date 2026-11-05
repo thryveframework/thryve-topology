@@ -1,0 +1,21 @@
+/target
+
+# Cargo.lock is intentionally tracked: thryve_graph builds a binary ("Topology"),
+# and committing the lockfile keeps release builds reproducible.
+
+# Personal scratch, never meant to ship.
+backup
+
+# Local assistant files.
+.claude/
+CLAUDE.md
+
+# Local packaging output.
+/dist
+
+# Editor / OS cruft.
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

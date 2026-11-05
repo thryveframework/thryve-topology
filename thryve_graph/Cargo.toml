@@ -1,0 +1,22 @@
+[package]
+    name = "thryve_graph"
+    version.workspace = true
+    edition.workspace = true
+    rust-version.workspace = true
+    license.workspace = true
+    homepage.workspace = true
+    repository.workspace = true
+    readme.workspace = true
+    description = "A cross-platform desktop viewer for Thryve task-topology graphs, rendered with egui/eframe."
+    keywords = ["thryve", "visualization", "graph", "egui", "topology"]
+    categories = ["visualization", "gui"]
+
+[dependencies]
+    ron = { workspace = true }          # Reads the export
+    serde = { workspace = true }        # The export's description
+    eframe = { workspace = true }       # The window
+    egui = { workspace = true }         # Everything drawn in it
+
+[[bin]]
+    name = "Topology"
+    path = "src/main.rs"

@@ -1,0 +1,109 @@
+(
+    nodes: [
+        (
+            callsite: (
+                file_path: "C:\\src\\thryve\\crates\\thryve_core\\src\\runtime\\plugin_manager.rs",
+                line_number: 200,
+                callsite_name: "TestGraph",
+                this_callsite_fingerprint: "12492297762336498906",
+                current_executing_task_fingerprint: "",
+            ),
+            fingerprint: "12492297762336498906",
+        ),
+        (
+            callsite: (
+                file_path: "crates\\plugins\\src\\graph_test.rs",
+                line_number: 47,
+                callsite_name: "TaskFin",
+                this_callsite_fingerprint: "14348963799517950713",
+                current_executing_task_fingerprint: "12492297762336498906",
+            ),
+            fingerprint: "14348963799517950713",
+        ),
+        (
+            callsite: (
+                file_path: "crates\\plugins\\src\\graph_test.rs",
+                line_number: 51,
+                callsite_name: "TaskB",
+                this_callsite_fingerprint: "2810095253735782427",
+                current_executing_task_fingerprint: "12492297762336498906",
+            ),
+            fingerprint: "2810095253735782427",
+        ),
+        (
+            callsite: (
+                file_path: "crates\\plugins\\src\\graph_test.rs",
+                line_number: 67,
+                callsite_name: "TaskC",
+                this_callsite_fingerprint: "6839543082880537938",
+                current_executing_task_fingerprint: "2810095253735782427",
+            ),
+            fingerprint: "6839543082880537938",
+        ),
+        (
+            callsite: (
+                file_path: "crates\\plugins\\src\\graph_test.rs",
+                line_number: 83,
+                callsite_name: "TaskD",
+                this_callsite_fingerprint: "18097493598756517585",
+                current_executing_task_fingerprint: "6839543082880537938",
+            ),
+            fingerprint: "18097493598756517585",
+        ),
+        (
+            callsite: (
+                file_path: "crates\\plugins\\src\\graph_test.rs",
+                line_number: 89,
+                callsite_name: "TaskD",
+                this_callsite_fingerprint: "13734610516988429389",
+                current_executing_task_fingerprint: "6839543082880537938",
+            ),
+            fingerprint: "13734610516988429389",
+        ),
+        (
+            callsite: (
+                file_path: "crates\\plugins\\src\\graph_test.rs",
+                line_number: 95,
+                callsite_name: "TaskE",
+                this_callsite_fingerprint: "16935714051544667781",
+                current_executing_task_fingerprint: "6839543082880537938",
+            ),
+            fingerprint: "16935714051544667781",
+        ),
+        (
+            callsite: (
+                file_path: "crates\\plugins\\src\\graph_test.rs",
+                line_number: 107,
+                callsite_name: "TaskD",
+                this_callsite_fingerprint: "5250075673094726308",
+                current_executing_task_fingerprint: "18097493598756517585",
+            ),
+            fingerprint: "5250075673094726308",
+        ),
+        (
+            callsite: (
+                file_path: "crates\\plugins\\src\\graph_test.rs",
+                line_number: 118,
+                callsite_name: "TaskD",
+                this_callsite_fingerprint: "6193964978212665085",
+                current_executing_task_fingerprint: "16935714051544667781",
+            ),
+            fingerprint: "6193964978212665085",
+        ),
+    ],
+    node_holes: [],
+    edge_property: directed,
+    edges: [
+        Some((0, 1, 1)),
+        Some((0, 2, 1)),
+        Some((2, 3, 5)),
+        Some((3, 4, 5)),
+        Some((3, 5, 5)),
+        Some((3, 6, 5)),
+        Some((4, 7, 5)),
+        Some((5, 7, 5)),
+        Some((6, 8, 5)),
+        Some((7, 7, 110)),
+        Some((8, 7, 5)),
+    ],
+)
