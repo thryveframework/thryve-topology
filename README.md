@@ -36,6 +36,8 @@ Grab the archive for your platform from the [latest release](https://github.com/
 
 Unpack it, and put `Topology` (`Topology.exe` on Windows) next to your Thryve program's executable. That's where Thryve looks for it: never in the root folder, since whoever can write to the root folder could put a program of their own there.
 
+On Windows, the first start may show "Windows protected your PC", because `Topology.exe` isn't code-signed: choose **More info** → **Run anyway**.
+
 Every release also gets an automatic **"Source code (zip)"** and **"(tar.gz)"** download from GitHub — no separate packaging needed for those.
 
 ### Build from source
